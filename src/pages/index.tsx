@@ -3,6 +3,7 @@ import {Route, Routes} from "react-router-dom";
 import MainPage from "./mainPage/mainPage";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AdminPage from "./adminPage/adminPage";
+import MainRegister from "./registrationPage/MainRegister";
 
 
 const MainRoutes = () => {
@@ -40,8 +41,8 @@ const MainRoutes = () => {
             id:1,
         },
         {
-            link:"/",
-            element: <MainPage />,
+            link:"/registration",
+            element: <MainRegister />,
             id:1,
         }
     ]
