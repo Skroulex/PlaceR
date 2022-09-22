@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reservation {
+    /* width: 1440px;
+    height: 781px; */
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/Rectangle\ 559.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.reservation-wrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-wrapper-left {
+    /* margin-left: 79px; */
+    margin-top: 50px;
+}
+
+.reservation-left-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 142%;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+.reservation-left-title-second {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 142%;
+    margin-bottom: 21px;
+}
+
+.oblako-wrapper {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    margin-left: 20px;
+}
+
+.block-right-oblako {
+    width: 120px;
+    height: 82px;
+    background-image: url('../img//obloko-53\ 1.png');
+    background-size: contain;
+}
+
+.stars-logo {
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    color: #11211E;
+    background: #BFFFF3;
+    border: 1px solid #11211E;
+    padding: 10px 20px;
+    opacity: 0.6;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.first {
+    border-radius: 10px 0 0 10px;
+}
+
+.second {
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-wrapper {
+    margin-bottom: 61px;
+}
+
+.description {
+    width: 390px;
+}
+
+.description-text {
+    margin-bottom: 48px;
+}
+
+.description-wrapper {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-inner-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.item-img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-descr {
+    margin-left: 15px;
+}
+
+.img-inner-wrapper {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-wrapper-middle {
+    margin-top: 249px;
+}
+
+.reservation-wrapper-right {
+    display: flex;
+    align-items: flex-end;
+}
+
+.reservation-wrapper-right-img {
+    width: 486px;
+    height: 634px;
+    background-image: url('../img//Vector.png');
+}
+
+.right-img-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.right-img-container p {
+    width: 60%;
+    margin: auto;
+    color: #11211E;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 142%;
+    text-align: center;
+}
