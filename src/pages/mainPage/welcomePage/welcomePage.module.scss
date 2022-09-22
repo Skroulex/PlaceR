@@ -1,0 +1,45 @@
+.wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 52px;
+  .text{
+    width: 550px;
+    text-align: center;
+  }
+  .title{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 142%;
+  }
+  .subtitle{
+    margin-top: 46px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142%;
+  }
+  .sign_up{
+    background: #C6FFFF;
+    border-radius: 10px;
+    padding: 14px 32px;
+    font-size: 20px;
+    line-height: 142%;
+    font-weight: 600;
+    margin-right: 28px;
+  }
+  .sign_in{
+    background: #FFAA5B;
+    border-radius: 10px;
+    padding: 14px 32px;
+    font-size: 20px;
+    line-height: 142%;
+    font-weight: 600;
+  }
+  .menu{
+    margin-top: 100px;
+  }
+}
+button{
+  font-family: "Montserrat";
+}
