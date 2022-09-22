@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './styles/index.css';
-import starOn from './img/star on.png';
-import starOff from './img/star off.png';
 import geotag from './img/geotag.png';
 import clock from './img/clock.png';
 import money from './img/money.png';
@@ -9,20 +7,50 @@ import img1 from './img/img1.png';
 import img2 from './img/img2.png';
 import img3 from './img/img3.png';
 import img4 from './img/img4.png';
-import Vector from './img/Vector.png';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
 
 const ReservationPage = () => {
     const [value, setValue] = useState(2);
 
+    const [nameInstitution, setInstitution] = useState('');
+    const [date, setData] = useState('');
+    const [time, setTime] = useState('');
+    const [count, setCount] = useState(0);
+    const [table, setTable] = useState('');
+
+
+    const handleChangeNameInstitution = (event) => {
+        setInstitution(event.target.value);
+    };
+
+    const handleChangeDate = (event) => {
+        setData(event.target.value);
+    };
+
+    const handleChangeTime = (event) => {
+        setTime(event.target.value);
+    };
+
+    const handleChangeCount = (event) => {
+        setCount(event.target.value);
+    };
+
+    const handleChangeTable = (event) => {
+        setTable(event.target.value);
+    };
+
     const StyledRating = styled(Rating)({
         '& .MuiRating-iconFilled': {
-          color: '#ff6d75',
+            color: '#ff6d75',
         },
     })
+
 
     return (
         <main>
@@ -111,10 +139,83 @@ const ReservationPage = () => {
                         </div>
                     </div>
                     <div className="reservation-wrapper-right">
-                        {/* <img className='vector-img' src={Vector} /> */}
                         <div className='reservation-wrapper-right-img'>
                             <div className='right-img-container'>
                                 <p>Бесплатный заказ столика</p>
+                                <div className='select-wrapper'>
+                                    <div className='select-wrapper-institution'>
+                                        <FormControl sx={{ m: 1, minWidth: 120 }}>
+                                            <Select
+                                                value={nameInstitution}
+                                                onChange={handleChangeNameInstitution}
+                                                displayEmpty
+                                                inputProps={{ 'aria-label': 'Without label' }}
+                                            >
+                                                <MenuItem value="">
+                                                    <em>В заведении Облако 53</em>
+                                                </MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                    </div>
+                                    <div className='select-wrapper-date-time'>
+                                        <FormControl className='select-date' sx={{ m: 1, minWidth: 120 }}>
+                                            <Select
+                                                value={date}
+                                                onChange={handleChangeDate}
+                                                displayEmpty
+                                                inputProps={{ 'aria-label': 'Without label' }}
+                                            >
+                                                <MenuItem value="">
+                                                    <em>12.06.2022</em>
+                                                </MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                        <FormControl className='select-time' sx={{ m: 1, minWidth: 120 }}>
+                                            <Select
+                                                value={time}
+                                                onChange={handleChangeTime}
+                                                displayEmpty
+                                                inputProps={{ 'aria-label': 'Without label' }}
+                                            >
+                                                <MenuItem value="">
+                                                    <em> 18:00</em>
+                                                </MenuItem>
+                                                <MenuItem value={2}>
+                                                    <em> 18:30</em>
+                                                </MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                    </div>
+                                    <div className='select-wrapper-count-table'>
+                                        <FormControl className='select-count' sx={{ m: 1, minWidth: 120 }}>
+                                            <Select
+                                                value={count}
+                                                onChange={handleChangeCount}
+                                                displayEmpty
+                                                inputProps={{ 'aria-label': 'Without label' }}
+                                            >
+                                                <MenuItem value="">
+                                                    <em>03</em>
+                                                </MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                        <FormControl className='select-table' sx={{ m: 1, minWidth: 120 }}>
+                                            <Select
+                                                value={table}
+                                                onChange={handleChangeTable}
+                                                displayEmpty
+                                                inputProps={{ 'aria-label': 'Without label' }}
+                                            >
+                                                <MenuItem value="">
+                                                    <em>Столик B1</em>
+                                                </MenuItem>
+                                            </Select>
+                                        </FormControl>
+                                    </div>
+                                    <div className='select-wrapper-btn-reservation'>
+                                        <button className='btn-reservation'> Забронировать столик </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
