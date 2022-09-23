@@ -6,7 +6,7 @@ const WelcomePage = () => {
     return (
         <div>
             <div className={styles.wrapper}>
-                <div>
+                <div className={styles.image}>
                     <img src={Office} alt="office"/>
                 </div>
                 <div className={styles.text}>

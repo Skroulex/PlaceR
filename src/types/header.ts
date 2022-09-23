@@ -1,5 +1,5 @@
 export interface IHeader {
-    name: string;
+    name: any;
     route: string;
 }
 
