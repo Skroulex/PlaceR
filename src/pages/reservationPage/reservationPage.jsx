@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './styles/index.css';
+import './styles/media.css';
 import geotag from './img/geotag.png';
 import clock from './img/clock.png';
 import money from './img/money.png';

@@ -1,0 +1,92 @@
+@media screen and (max-width: 375px) and (max-width: 812px) {
+    .reservation-wrapper-left { 
+        margin-top: 78px;
+    }
+    .reservation-left-title {
+        font-size: 16px;
+    }
+    .oblako-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        margin-bottom: 27px;
+    }
+    .reservation-left-title {
+        margin-bottom: 36px;
+    }
+    .block-right-oblako {
+        margin-bottom: 13px;
+    }
+    .reservation-left-title-second {
+        margin-bottom: 13px;
+        font-size: 24px;
+    }
+    .btn-wrapper {
+        width: 335px;
+        margin-bottom: 30px;
+    }
+    .first {
+        width: 45%;
+    }    
+    .second {
+        width: 55%;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 6px 14px 8px 14px;
+    }
+    .description {
+        margin-left: 20px;
+    }
+    .description-text {
+        width: 310px;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .reservation-wrapper {
+        display: block;
+    }
+    .reservation-wrapper-middle {
+        margin-top: 225px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 90px;
+    }
+    .img-wrapper img {
+        width: 100%;
+    }
+    .img-inner-wrapper img {
+        width: 32%;
+    }
+
+    /* Форма для бронирования */
+
+    .reservation-wrapper-right {
+        position:absolute; 
+        left: 0;
+    }
+    .reservation-wrapper-right-img {
+        width: 375px;
+        height: 527px;
+        background-image: none;
+        background-color: #FFFFFF;
+    }
+    .right-img-container p {
+        width: 80%;
+        font-size: 24px;
+    }
+    .select-wrapper-institution {
+        margin-top:36px;
+        margin-bottom: 36px;
+    }
+    .select-wrapper-btn-reservation {
+        margin-top: 36px;
+        margin-bottom: 40px;
+    }    
+    .right-img-container {
+        width: 90%;
+    }
+    .select-wrapper-date-time {
+        margin-bottom: 36px;
+    }
+}
