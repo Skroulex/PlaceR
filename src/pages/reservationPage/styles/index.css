@@ -18,7 +18,7 @@ body {
 }
 
 .reservation-wrapper {
-    width: 85%;
+    width: 90%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -57,6 +57,7 @@ body {
     height: 82px;
     background-image: url('../img//obloko-53\ 1.png');
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .stars-logo {
@@ -142,7 +143,8 @@ body {
 .reservation-wrapper-right-img {
     width: 486px;
     height: 634px;
-    background-image: url('../img//Vector.png');
+    background: #FFFFFF;
+    border-radius: 180px 180px 0 0;
 }
 
 .right-img-container {
@@ -171,11 +173,13 @@ body {
 
 .select-wrapper-date-time {
     display: flex;
+    align-items: center;
     margin-bottom: 42px;
 }
 
 .select-wrapper-count-table {
     display: flex;
+    align-items: center;
 }
 
 .select-date {
@@ -203,6 +207,11 @@ body {
 }
 
 .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#date, #time {
     padding-top: 6px;
     padding-bottom: 6px;
 }

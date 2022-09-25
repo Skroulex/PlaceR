@@ -61,6 +61,11 @@
 
     /* Форма для бронирования */
 
+    .reservation {
+        height: 1624px;
+        background-size: auto 50%;
+        background-repeat: repeat-y;
+    }
     .reservation-wrapper-right {
         position:absolute; 
         left: 0;
@@ -70,6 +75,7 @@
         height: 527px;
         background-image: none;
         background-color: #FFFFFF;
+        border-radius: 160px 160px 0 0;
     }
     .right-img-container p {
         width: 80%;

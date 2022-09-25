@@ -4,10 +4,6 @@ import './styles/media.css';
 import geotag from './img/geotag.png';
 import clock from './img/clock.png';
 import money from './img/money.png';
-import img1 from './img/img1.png';
-import img2 from './img/img2.png';
-import img3 from './img/img3.png';
-import img4 from './img/img4.png';
 import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 import { styled } from '@mui/material/styles';
@@ -16,22 +12,24 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 
+import TextField from '@mui/material/TextField';
+
+
 const ReservationPage = () => {
-    const [value, setValue] = useState(2);
+    const [value, setValue] = useState(2); // Рейтинг заведения
 
     const [nameInstitution, setInstitution] = useState('');
-    const [date, setData] = useState('');
+    const [date, setDate] = useState('')
     const [time, setTime] = useState('');
-    const [count, setCount] = useState(0);
+    const [count, setCount] = useState('');
     const [table, setTable] = useState('');
-
 
     const handleChangeNameInstitution = (event) => {
         setInstitution(event.target.value);
     };
 
     const handleChangeDate = (event) => {
-        setData(event.target.value);
+        setDate(event.target.value);
     };
 
     const handleChangeTime = (event) => {
@@ -53,6 +51,35 @@ const ReservationPage = () => {
     })
 
 
+    const listOfObject = [
+        {
+            name: 'ОБЛАКО 53',
+            nameOfStreet: 'Ул. Разакова 19, Бц. Россия',
+            time: '11:00-04:00',
+            value: 1000,
+            description: `Разнообразный и богатый опыт говорит нам, 
+            что граница обучения кадров требует анализа поэтапного и последовательного развития общества. 
+            Как принято считать, явные признаки победы институционализации, инициированные исключительно синтетически.`,
+            ListOfImg: [
+                {
+                    img: '/static/media/img1.06635facbb48ad0ba92c.png',
+                },
+                {
+                    img: '/static/media/img2.3d88847920de6d11fcd4.png',
+                },
+                {
+                    img: '/static/media/img3.a37560db83103d697d7d.png',
+                },
+                {
+                    img: '/static/media/img4.876cb47e1abe7fadbee2.png'
+                }
+            ]
+        }
+    ]
+
+
+
+
     return (
         <main>
             <div className="reservation">
@@ -61,7 +88,7 @@ const ReservationPage = () => {
                         <p className="reservation-left-title">Рекомендуемые заведения</p>
                         <div className='oblako-wrapper'>
                             <div className='block-left-oblako'>
-                                <p className='reservation-left-title-second'>ОБЛАКО 53</p>
+                                <p className='reservation-left-title-second'>{listOfObject[0].name}</p>
                                 <div className='stars-logo'>
                                     <Box
                                         sx={{
@@ -88,12 +115,7 @@ const ReservationPage = () => {
                         </div>
                         <div className='description'>
                             <p className='description-text'>
-                                Разнообразный и богатый опыт говорит нам,
-                                что граница обучения кадров требует анализа
-                                поэтапного и последовательного развития
-                                общества. Как принято считать, явные
-                                признаки победы институционализации,
-                                инициированные исключительно синтетически.
+                                {listOfObject[0].description}
                             </p>
                             <div className='description-wrapper'>
                                 <div className='description-inner-wrapper'>
@@ -102,7 +124,7 @@ const ReservationPage = () => {
                                     </div>
                                     <div className='item-descr'>
                                         <p>
-                                            Ул. Разакова 19, Бц. Россия
+                                            {listOfObject[0].nameOfStreet}
                                         </p>
                                     </div>
                                 </div>
@@ -112,7 +134,7 @@ const ReservationPage = () => {
                                     </div>
                                     <div className='item-descr'>
                                         <p>
-                                            11:00-04:00
+                                            {listOfObject[0].time}
                                         </p>
                                     </div>
                                 </div>
@@ -122,7 +144,7 @@ const ReservationPage = () => {
                                     </div>
                                     <div className='item-descr'>
                                         <p>
-                                            Средний чек: 1000 сом
+                                            Средний чек: {listOfObject[0].value} сом
                                         </p>
                                     </div>
                                 </div>
@@ -131,11 +153,11 @@ const ReservationPage = () => {
                     </div>
                     <div className="reservation-wrapper-middle">
                         <div className='img-wrapper'>
-                            <img src={img1} />
+                            <img src={listOfObject[0].ListOfImg[0].img} />
                             <div className='img-inner-wrapper'>
-                                <img src={img2} />
-                                <img src={img3} />
-                                <img src={img4} />
+                                <img src={listOfObject[0].ListOfImg[1].img} />
+                                <img src={listOfObject[0].ListOfImg[2].img} />
+                                <img src={listOfObject[0].ListOfImg[3].img} />
                             </div>
                         </div>
                     </div>
@@ -153,38 +175,34 @@ const ReservationPage = () => {
                                                 inputProps={{ 'aria-label': 'Without label' }}
                                             >
                                                 <MenuItem value="">
-                                                    <em>В заведении Облако 53</em>
+                                                    В заведении Облако 53
                                                 </MenuItem>
                                             </Select>
                                         </FormControl>
                                     </div>
                                     <div className='select-wrapper-date-time'>
-                                        <FormControl className='select-date' sx={{ m: 1, minWidth: 120 }}>
-                                            <Select
-                                                value={date}
-                                                onChange={handleChangeDate}
-                                                displayEmpty
-                                                inputProps={{ 'aria-label': 'Without label' }}
-                                            >
-                                                <MenuItem value="">
-                                                    <em>12.06.2022</em>
-                                                </MenuItem>
-                                            </Select>
-                                        </FormControl>
+                                            <FormControl className='select-date' sx={{ m: 1, minWidth: 120 }}>
+                                                <TextField
+                                                    id="date"
+                                                    type="date"
+                                                    defaultValue= "2022-09-25"
+                                                    InputLabelProps={{
+                                                        shrink: true,
+                                                    }}
+                                                />
+                                            </FormControl>
                                         <FormControl className='select-time' sx={{ m: 1, minWidth: 120 }}>
-                                            <Select
-                                                value={time}
-                                                onChange={handleChangeTime}
-                                                displayEmpty
-                                                inputProps={{ 'aria-label': 'Without label' }}
-                                            >
-                                                <MenuItem value="">
-                                                    <em> 18:00</em>
-                                                </MenuItem>
-                                                <MenuItem value={2}>
-                                                    <em> 18:30</em>
-                                                </MenuItem>
-                                            </Select>
+                                            <TextField
+                                                id="time"
+                                                type="time"
+                                                defaultValue="07:30"
+                                                InputLabelProps={{
+                                                    shrink: true,
+                                                }}
+                                                inputProps={{
+                                                    step: 300, // 5 min
+                                                }}
+                                            />
                                         </FormControl>
                                     </div>
                                     <div className='select-wrapper-count-table'>
@@ -196,7 +214,7 @@ const ReservationPage = () => {
                                                 inputProps={{ 'aria-label': 'Without label' }}
                                             >
                                                 <MenuItem value="">
-                                                    <em>03</em>
+                                                    03
                                                 </MenuItem>
                                             </Select>
                                         </FormControl>
@@ -208,7 +226,7 @@ const ReservationPage = () => {
                                                 inputProps={{ 'aria-label': 'Without label' }}
                                             >
                                                 <MenuItem value="">
-                                                    <em>Столик B1</em>
+                                                    Столик B1
                                                 </MenuItem>
                                             </Select>
                                         </FormControl>
