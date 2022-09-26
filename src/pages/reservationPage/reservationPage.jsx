@@ -60,16 +60,16 @@ const ReservationPage = () => {
             Как принято считать, явные признаки победы институционализации, инициированные исключительно синтетически.`,
             ListOfImg: [
                 {
-                    img: '/static/media/img1.06635facbb48ad0ba92c.png',
+                    img: 'https://s3-alpha-sig.figma.com/img/bf21/e8fa/f5d825ba65d671c56b1644a56a81974d?Expires=1665360000&Signature=KjktAUwG8wlVPnn1PZosWrKeUEpdpwnWAGGMBIBEd5OPzIJCN~fzX9PXSFfUSLNsEszb4vIaRv-3UiQUR7rVu3Pplp5-0JGGK9WnyOZHLX~1Sh6qxhfRf992jxPwIDaB8-GqS4Lxo44fLhSC785WdpsF-1gmcabEjLIBtO3ThD4IRqPDK7OLRDqN1~YhpjU475FoDGlG9plWc1~PW0ZADNSzXDufh2IgycLPLnAqumrj-zondsMByFzDV-uasXE6YYoQcQr6he7fcjWUm6AYu-5er~pXgjE0YnHbz7CqmyqAxEnlmZJN6hkeNRDRiQlExbQV7Esj5sBB9yzb6q2aIg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
                 },
                 {
-                    img: '/static/media/img2.3d88847920de6d11fcd4.png',
+                    img: 'https://s3-alpha-sig.figma.com/img/74b2/9023/7e6179c2a6cc2ebf90c17b4d1a415bc0?Expires=1665360000&Signature=B3~C1BXld904rjtiR74dMm8K8L6JuK7hXZSDK41QJqXx6Y~wb6In9ZWTbHYQ39U6HWa1BnDhgzaqbkhu3VQI-4u-mty8HCEzB10saXwZkW6kWPU0zbyuPbFrmcrD685OvE04aWc93Dh9WAFLcKfs255eDdMqbtjR-xvsCCRf2L4BHOIkJIMdy66ZxzzeAyUqj2cxeZRLGB92JBt9oz7ONjjZ~lyQ8ljoDXAreeitNfZixH15ZKArBPO08qbdLSPxwaXqAcG70legbUO6GtwIEz97Iarq1ZXe0P7hlhf4tZbJAZy~2hrfpOeasO4csB~yv376qT56gK6iOvfvikSCOg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
                 },
                 {
-                    img: '/static/media/img3.a37560db83103d697d7d.png',
+                    img: 'https://s3-alpha-sig.figma.com/img/8d5e/468f/7382975558500f803f2c45a36f605fd6?Expires=1665360000&Signature=bLouIu9drNvptEIKGHY5YRNia-oGnvghQCS4liBcLFVQGNL5b9BlzLY2nNrZJ-rMtGbJ5Qax0awardqwKkhE0~coWgr3rf7QBAt~W1Q~95qrSwyPKD3599N3ZTj-QWju1d94NSbJFxSJv-CJ-r5lRKogtgiUScjjmvvjqC5B6E5kIax5-qzI~5SJ8392luxVs7h3OZOkqx4ThVax0v825byajpi~tPBykTkIp7r-BvQvXoqQj9U9kAWjgEZsLc4nuNgvA02ZABSFGt2IThtvLqRRFVUeIUjlddnvGojGQa5V-TnRzScc20qjbZQlr8TF6WOWLmM6p5Lks5mbUZ2g6Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
                 },
                 {
-                    img: '/static/media/img4.876cb47e1abe7fadbee2.png'
+                    img: 'https://s3-alpha-sig.figma.com/img/b25a/afa9/4564eb20e1d306e3790ead9329f7faee?Expires=1665360000&Signature=LPlDqHtONJ5LAdPltup7Su27VyvTxq6-SUPvAN6JFE52uxQ2L8Gumjxdr0F824vcEVN9rqu-gojBRNgYDUkRKuRltAztwJQeE6CdoHQYeObLmL7vn0FcvZdkJXMw38mMBe802Zc7UjUt92F4v9LTPhrz6H9rwDpnECUeyJzbbn6d1Uyfhvd8ByLo1Wt1C5iGin6srQYzTN4ziT1Bm2aQ5nd2msl1SjZ~fi7QwN6o55C-FfMtmBK59s8Jn0L1nF9H3JQtGhdkbjpb76sCQ4YQvOvfDgkkD12NC9GCwtMQZqfOrCMrrRyetQHAoEGGSTXhSg3tSC-GLdUdb-fOFxQMxQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA'
                 }
             ]
         }
@@ -151,11 +151,11 @@ const ReservationPage = () => {
                     </div>
                     <div className="reservation-wrapper-middle">
                         <div className='img-wrapper'>
-                            <img src={listOfObject[0].ListOfImg[0].img} />
+                            <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
                             <div className='img-inner-wrapper'>
-                                <img src={listOfObject[0].ListOfImg[1].img} />
-                                <img src={listOfObject[0].ListOfImg[2].img} />
-                                <img src={listOfObject[0].ListOfImg[3].img} />
+                                <img className='img-2' src={listOfObject[0].ListOfImg[1].img} />
+                                <img className='img-3' src={listOfObject[0].ListOfImg[2].img} />
+                                <img className='img-4' src={listOfObject[0].ListOfImg[3].img} />
                             </div>
                         </div>
                     </div>

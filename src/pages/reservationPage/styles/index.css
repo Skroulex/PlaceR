@@ -135,6 +135,18 @@ body {
     margin-top: 249px;
 }
 
+.img-1 {
+    width: 338px;
+    height: 224px;
+    border-radius: 10px;
+}
+
+.img-2, .img-3, .img-4 {
+    width: 108px;
+    height: 73px;
+    border-radius: 10px;
+}
+
 .reservation-wrapper-right {
     display: flex;
     align-items: flex-end;
