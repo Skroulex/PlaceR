@@ -16,11 +16,11 @@ import TextField from '@mui/material/TextField';
 const ReservationPage = () => {
     const [value, setValue] = useState(2); // Рейтинг заведения
 
-    const [nameInstitution, setInstitution] = useState('');
-    const [date, setDate] = useState('')
-    const [time, setTime] = useState('');
-    const [count, setCount] = useState('');
-    const [table, setTable] = useState('');
+    const [nameInstitution, setInstitution] = useState(['В заведении Облако 53']);
+    const [date, setDate] = useState('2022-09-25')
+    const [time, setTime] = useState('07:30');
+    const [count, setCount] = useState([1]);
+    const [table, setTable] = useState(['A1']);
 
     const handleChangeNameInstitution = (event) => {
         setInstitution(event.target.value);
@@ -33,7 +33,7 @@ const ReservationPage = () => {
     const handleChangeTime = (event) => {
         setTime(event.target.value);
     };
-
+    
     const handleChangeCount = (event) => {
         setCount(event.target.value);
     };
@@ -75,8 +75,81 @@ const ReservationPage = () => {
         }
     ]
 
-    
-
+    const reservationList = [
+        {
+            name: 'В заведении Облако 53',
+            listOfCount: [
+                {
+                    count: 1
+                },
+                {
+                    count: 2
+                },
+                {
+                    count: 3
+                },
+                {
+                    count: 4
+                },
+                {
+                    count: 5
+                },
+                {
+                    count: 6
+                },
+                {
+                    count: 7
+                },
+                {
+                    count: 8
+                }
+            ],
+            listOfTable: [
+                {
+                    name: 'A1'
+                },
+                {
+                    name: 'A2'
+                },
+                {
+                    name: 'A3'
+                },
+                {
+                    name: 'A4'
+                },
+                {
+                    name: 'B1'
+                },
+                {
+                    name: 'B2'
+                },
+                {
+                    name: 'B3'
+                },
+                {
+                    name: 'B4'
+                },
+                {
+                    name: 'B5'
+                },
+                {
+                    name: 'C1'
+                },
+                {
+                    name: 'C2'
+                },
+                {
+                    name: 'C3'
+                },
+                {
+                    name: 'C4'
+                },
+                {
+                    name: 'C5'
+                }
+            ]
+        }
+    ]
 
     return (
         <main>
@@ -172,28 +245,32 @@ const ReservationPage = () => {
                                                 displayEmpty
                                                 inputProps={{ 'aria-label': 'Without label' }}
                                             >
-                                                <MenuItem value="">
-                                                    В заведении Облако 53
-                                                </MenuItem>
+                                                {reservationList.map((item) => (
+                                                    <MenuItem value={item.name} key={item.name}>
+                                                        {item.name}
+                                                    </MenuItem>
+                                                ))}
                                             </Select>
                                         </FormControl>
                                     </div>
                                     <div className='select-wrapper-date-time'>
-                                            <FormControl className='select-date' sx={{ m: 1, minWidth: 120 }}>
-                                                <TextField
-                                                    id="date"
-                                                    type="date"
-                                                    defaultValue= "2022-09-25"
-                                                    InputLabelProps={{
-                                                        shrink: true,
-                                                    }}
-                                                />
-                                            </FormControl>
+                                        <FormControl className='select-date' sx={{ m: 1, minWidth: 120 }}>
+                                            <TextField
+                                                id="date"
+                                                type="date"
+                                                value={date}
+                                                onChange={handleChangeDate}
+                                                InputLabelProps={{
+                                                    shrink: true,
+                                                }}
+                                            />
+                                        </FormControl>
                                         <FormControl className='select-time' sx={{ m: 1, minWidth: 120 }}>
                                             <TextField
                                                 id="time"
                                                 type="time"
-                                                defaultValue="07:30"
+                                                value={time}
+                                                onChange={handleChangeTime}
                                                 InputLabelProps={{
                                                     shrink: true,
                                                 }}
@@ -211,9 +288,13 @@ const ReservationPage = () => {
                                                 displayEmpty
                                                 inputProps={{ 'aria-label': 'Without label' }}
                                             >
-                                                <MenuItem value="">
-                                                    03
-                                                </MenuItem>
+                                                {reservationList.map((item) => (
+                                                    item.listOfCount.map((item2) => (
+                                                        <MenuItem value={item2.count} key={item2.count}>
+                                                            {item2.count}
+                                                        </MenuItem>
+                                                    ))
+                                                ))}
                                             </Select>
                                         </FormControl>
                                         <FormControl className='select-table' sx={{ m: 1, minWidth: 120 }}>
@@ -223,9 +304,13 @@ const ReservationPage = () => {
                                                 displayEmpty
                                                 inputProps={{ 'aria-label': 'Without label' }}
                                             >
-                                                <MenuItem value="">
-                                                    Столик B1
-                                                </MenuItem>
+                                               {reservationList.map((item) => (
+                                                    item.listOfTable.map((item2) => (
+                                                        <MenuItem value={item2.name} key={item2.name}>
+                                                            {item2.name}
+                                                        </MenuItem>
+                                                    ))
+                                                ))}
                                             </Select>
                                         </FormControl>
                                     </div>
