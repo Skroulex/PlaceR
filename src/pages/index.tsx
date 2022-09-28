@@ -4,47 +4,48 @@ import MainPage from "./mainPage/mainPage";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AdminPage from "./adminPage/adminPage";
 import ReservationPage from "./reservationPage/reservationPage";
+import Footer from "../components/Footer/Footer";
 
 
 const MainRoutes = () => {
     let [isAdmin, setIsAdmin] = useState<boolean>(true);
 
     const PUBLIC_ROUTES= [
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
         {
             link:"/",
-            element: <ReservationPage />,
+            element: <Footer />,
             id:1,
-        }
+        },
+        // {
+        //     link:"/",
+        //     element: <MainPage />,
+        //     id:1,
+        // },
+        // {
+        //     link:"/",
+        //     element: <MainPage />,
+        //     id:1,
+        // },
+        // {
+        //     link:"/",
+        //     element: <MainPage />,
+        //     id:1,
+        // },
+        // {
+        //     link:"/",
+        //     element: <MainPage />,
+        //     id:1,
+        // },
+        // {
+        //     link:"/",
+        //     element: <MainPage />,
+        //     id:1,
+        // },
+        // {
+        //     link:"/reservation",
+        //     element: <ReservationPage />,
+        //     id:1,
+        // }
     ]
 
     const PRIVATE_ROUTES = [
