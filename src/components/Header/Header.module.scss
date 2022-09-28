@@ -10,7 +10,7 @@
     padding: 50px 50px;
     position: fixed;
     bottom: 0;
-    left: 20%;
+    left: 19%;
     z-index: 10;
     display: flex;
     align-items: center;
@@ -26,22 +26,25 @@
       letter-spacing: 0.075em;
       color: #FFFFFF;
 
-      img{
+      img {
         margin-right: 16px;
       }
     }
-    nav{
+
+    nav {
       background: rgba(17, 35, 31, 0.8);
-      img{
+
+      img {
         background: rgba(17, 35, 31, 0.8);
       }
 
-      .activeLink{
+      .activeLink {
         border-bottom: 1px solid #FFAA5B;
         opacity: 1;
       }
     }
-    a{
+
+    a {
       background: rgba(17, 35, 31, 0.8);
       color: #FFFFFF;
       opacity: 0.6;
@@ -51,9 +54,9 @@
 }
 
 
-@media screen and (max-width: 1440px){
-  .container{
-    .wrapper{
+@media screen and (max-width: 1440px) {
+  .container {
+    .wrapper {
       left: 12%;
     }
   }
@@ -61,8 +64,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .container{
-    .wrapper{
+  .container {
+    .wrapper {
       width: 700px;
       left: 15%;
     }
@@ -70,8 +73,8 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container{
-    .wrapper{
+  .container {
+    .wrapper {
       width: 700px;
       left: 5%;
     }
@@ -79,25 +82,31 @@
 }
 
 @media screen and (max-width: 425px) {
-  .container{
-    .wrapper{
+  .container {
+    .wrapper {
       width: 424px;
       left: 0;
       display: flex;
       justify-content: space-between;
-      a{
+
+      a {
         background: none;
         opacity: 1;
-      }:hover{
+      }
 
-             }
+      :hover {
+
+      }
     }
-    .main_link{
+
+    .main_link {
       background: none !important;
     }
-    nav{
+
+    nav {
       display: none;
-      .activeLink{
+
+      .activeLink {
         border-bottom: 1px solid #FFAA5B;
         opacity: 1;
       }
@@ -105,16 +114,18 @@
 
   }
 }
-@media screen and (max-width: 375px){
-  .container{
-    .wrapper{
+
+@media screen and (max-width: 375px) {
+  .container {
+    .wrapper {
       width: 375px;
     }
   }
 }
-@media screen and (max-width: 325px){
-  .container{
-    .wrapper{
+
+@media screen and (max-width: 325px) {
+  .container {
+    .wrapper {
       width: 319px;
     }
   }

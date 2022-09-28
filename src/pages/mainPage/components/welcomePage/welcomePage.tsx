@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './welcomePage.module.scss'
-import Office from "../../../assets/welcomePage/office.png"
+import Office from "../../../../assets/welcomePage/office.png"
 
 const WelcomePage = () => {
     return (

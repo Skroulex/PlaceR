@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  font-family: Mont;
+
+  .about{
+    width: 500px;
+  }
+
+  .title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 142%;
+  }
+  .subtitle{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142%;
+  }
+  .text{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 142%;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    p{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 142%;
+      color: #192A26;
+    }
+    //img{
+    //  background: white;
+    //}
+  }
+}

@@ -12,8 +12,13 @@ const MainRoutes = () => {
 
     const PUBLIC_ROUTES= [
         {
-            link:"/",
+            link:"/footer",
             element: <Footer />,
+            id:1,
+        },
+        {
+            link:"/",
+            element: <MainPage />,
             id:1,
         },
         // {
@@ -36,16 +41,11 @@ const MainRoutes = () => {
         //     element: <MainPage />,
         //     id:1,
         // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/reservation",
-        //     element: <ReservationPage />,
-        //     id:1,
-        // }
+        {
+            link:"/reservation",
+            element: <ReservationPage />,
+            id:1,
+        }
     ]
 
     const PRIVATE_ROUTES = [
