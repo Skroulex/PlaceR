@@ -13,7 +13,7 @@ const App = () => {
         <div>
             {isExcept && <Header />}
             <MainRoutes />
-            {isExcept && <Footer/>}
+            {/* {isExcept && <Footer/>} */}
         </div>
     );
 };
