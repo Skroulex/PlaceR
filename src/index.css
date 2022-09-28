@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #1B2C28;
 }
 
 html,body{
     font-family: 'Montserrat';
+    background: #1B2C28;
 }
 a{
     text-decoration: none;

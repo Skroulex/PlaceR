@@ -42,7 +42,7 @@ const MainRoutes = () => {
         // },
         {
             link:"/",
-            element: <ReservationPage />,
+            element: <MainPage />,
             id:1,
         }
     ]
