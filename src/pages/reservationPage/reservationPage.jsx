@@ -12,8 +12,19 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField';
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { FreeMode, Navigation, Thumbs } from "swiper";
+
 
 const ReservationPage = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
     const [value, setValue] = useState(2); // Рейтинг заведения
 
     const [nameInstitution, setInstitution] = useState(['В заведении Облако 53']);
@@ -33,7 +44,7 @@ const ReservationPage = () => {
     const handleChangeTime = (event) => {
         setTime(event.target.value);
     };
-    
+
     const handleChangeCount = (event) => {
         setCount(event.target.value);
     };
@@ -152,7 +163,6 @@ const ReservationPage = () => {
     ]
 
     return (
-        <main>
             <div className="reservation">
                 <div className="reservation-wrapper">
                     <div className="reservation-wrapper-left">
@@ -224,11 +234,50 @@ const ReservationPage = () => {
                     </div>
                     <div className="reservation-wrapper-middle">
                         <div className='img-wrapper'>
-                            <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
+                            <Swiper
+                                rewind={false}
+                                navigation={true}
+                                spaceBetween={10}
+                                thumbs={{ swiper: thumbsSwiper }}
+                                modules={[FreeMode, Navigation, Thumbs]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className='img-2' src={listOfObject[0].ListOfImg[1].img} />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className='img-3' src={listOfObject[0].ListOfImg[2].img} />
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <img className='img-4' src={listOfObject[0].ListOfImg[3].img} />
+                                </SwiperSlide>
+                            </Swiper>
                             <div className='img-inner-wrapper'>
-                                <img className='img-2' src={listOfObject[0].ListOfImg[1].img} />
-                                <img className='img-3' src={listOfObject[0].ListOfImg[2].img} />
-                                <img className='img-4' src={listOfObject[0].ListOfImg[3].img} />
+                                <Swiper
+                                    onSwiper={setThumbsSwiper}
+                                    spaceBetween={10}
+                                    slidesPerView={3}
+                                    freeMode={true}
+                                    watchSlidesProgress={true}
+                                    modules={[FreeMode, Navigation, Thumbs]}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide>
+                                        <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className='img-2' src={listOfObject[0].ListOfImg[1].img} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className='img-3' src={listOfObject[0].ListOfImg[2].img} />
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <img className='img-4' src={listOfObject[0].ListOfImg[3].img} />
+                                    </SwiperSlide>
+                                </Swiper>
                             </div>
                         </div>
                     </div>
@@ -238,7 +287,7 @@ const ReservationPage = () => {
                                 <p>Бесплатный заказ столика</p>
                                 <div className='select-wrapper'>
                                     <div className='select-wrapper-institution'>
-                                        <FormControl sx={{ m: 1, minWidth: 120 }}>
+                                        <FormControl className='select-constitution' sx={{ m: 1, minWidth: 120 }}>
                                             <Select
                                                 value={nameInstitution}
                                                 onChange={handleChangeNameInstitution}
@@ -304,7 +353,7 @@ const ReservationPage = () => {
                                                 displayEmpty
                                                 inputProps={{ 'aria-label': 'Without label' }}
                                             >
-                                               {reservationList.map((item) => (
+                                                {reservationList.map((item) => (
                                                     item.listOfTable.map((item2) => (
                                                         <MenuItem value={item2.name} key={item2.name}>
                                                             {item2.name}
@@ -323,7 +372,6 @@ const ReservationPage = () => {
                     </div>
                 </div>
             </div>
-        </main>
     );
 };
 
