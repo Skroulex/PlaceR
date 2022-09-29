@@ -1,0 +1,214 @@
+@media screen and (max-width: 1024px) {
+    .reservation-wrapper-right-img {
+        width: 100%;
+    }
+    .right-img-container p {
+        font-size: 20px;
+    }
+    .select-wrapper-date-time {
+        display: block;
+        margin-bottom: 0;
+    }
+    .select-wrapper-count-table {
+        display: block;
+    }
+    .select-date, .select-time, .select-count, .select-table {
+        width: 205px;
+    }
+    .btn-reservation {
+        width: 205px;
+    }
+    .select-wrapper-btn-reservation {
+        margin-top: 20px;
+    }
+    .oblako-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        margin-bottom: 27px;
+    }
+    .btn-wrapper {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .first, .second {
+        width: 50%;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .description {
+        width: 100%;
+    }
+    .description-text {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+    .block-right-oblako, .reservation-left-title-second {
+        margin-bottom: 20px;
+    }
+    .reservation-left-title {
+        font-size: 16px;
+    }
+    .reservation-left-title-second {
+        font-size: 26px;
+    }
+    .item-descr p {
+        font-size: 14px;
+    }
+    .btn-reservation {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reservation {
+        background-size: auto 768px;
+        background-repeat: repeat-y;
+        height:100%;
+    }
+    .reservation-wrapper {
+        display: block;
+    }
+    .reservation-wrapper-left {
+        width: 100%;
+        height: 768px;
+    }
+    .reservation-left-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .block-right-oblako, .reservation-left-title-second {
+        margin-bottom: 30px;
+    }
+    .reservation-left-title-second {
+        font-size: 28px;
+    }
+    .first, .second {
+        font-size: 18px;
+    }
+    .description-text {
+        font-size: 18px;
+    }
+    .item-descr p {
+        font-size: 18px;
+    }
+    .reservation-wrapper-middle {
+        width: 100%;
+        margin-bottom: 150px;
+    }
+    .reservation-wrapper-middle {
+        margin-top: 150px;
+    }
+    .reservation-wrapper-right {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background-image: url('../img/Rectangle\ 559.jpg');
+        background-repeat: no-repeat;
+    }
+    .reservation-wrapper-right-img {
+        height: 100%;
+    }
+    .wrapper-select-date-time {
+        width: 100%;
+    }
+    .select-date {
+        width: 60%;
+    }
+    .select-time {
+        width: 40%;
+    }
+    .select-wrapper-date-time {
+        display: flex;
+    }
+    .select-count {
+        width: 40%;
+    }
+    .select-table {
+        width: 60%;
+    }
+    .select-wrapper-count-table {
+        display: flex;
+    }
+    .select-wrapper-btn-reservation {
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+    .btn-reservation {
+        width: 80%;
+        font-size: 20px;
+    }
+    .right-img-container p {
+        font-size: 28px;
+    }
+    .select-constitution {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .reservation-left-title {
+        font-size: 18px;
+    }
+    .reservation-left-title-second {
+        font-size: 26px;
+    }
+    .block-right-oblako {
+        margin-bottom: 0;
+    }
+    .reservation-left-title-second {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .first, .second {
+        font-size: 16px;
+    }
+    .description-text {
+        font-size: 16px;
+    }
+    .right-img-container p {
+        font-size: 26px;
+    }
+    .btn-reservation {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .reservation-left-title {
+        font-size: 16px;
+    }
+    .reservation-left-title-second {
+        font-size: 24px;
+    }
+    .first, .second {
+        font-size: 14px;
+    }
+    .description-text {
+        font-size: 14px;
+    }
+    .item-descr p {
+        font-size: 16px;
+    }
+    .right-img-container p {
+        font-size: 24px;
+    }
+}   
+
+@media screen and (max-width: 320px) {
+    .first, .second {
+        font-size: 13px;
+    }
+    .right-img-container p {
+        font-size: 20px;
+    }
+    .btn-reservation {
+        font-size: 16px;
+    }
+    .select-wrapper-date-time, .select-wrapper-count-table {
+        display: block;
+    }
+    .select-date, .select-time, .select-count, .select-table {
+        width: 95%;
+    }
+}
