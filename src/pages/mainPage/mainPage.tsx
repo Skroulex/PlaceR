@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import 'swiper/css';
+import './mainPage.css'
 
 import s from "./mainPage.module.scss"
 import WelcomePage from "./components/welcomePage/welcomePage";

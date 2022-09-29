@@ -1,8 +1,11 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
+
 import styles from './welcomePage.module.scss'
 import Office from "../../../../assets/welcomePage/office.png"
 
 const WelcomePage = () => {
+    const navigate = useNavigate()
     return (
         <div>
             <div className={styles.wrapper}>
@@ -18,8 +21,8 @@ const WelcomePage = () => {
                         создаёт предпосылки для модели развития.
                     </p>
                     <div className={styles.menu}>
-                        <button className={styles.sign_up}>Регистрация</button>
-                        <button className={styles.sign_in}>Меню</button>
+                        <button onClick={() => navigate('/registration')} className={styles.sign_up}>Регистрация</button>
+                        <button onClick={() => navigate('/menu')} className={styles.sign_in}>Меню</button>
                     </div>
                 </div>
             </div>
