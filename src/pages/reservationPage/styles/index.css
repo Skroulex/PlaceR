@@ -110,6 +110,10 @@ body {
     justify-content: space-between;
 }
 
+.description-wrapper p {
+    font-size: 18px;
+}
+
 .description-inner-wrapper {
     display: flex;
     align-items: center;
