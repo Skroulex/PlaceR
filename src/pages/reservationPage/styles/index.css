@@ -46,7 +46,6 @@ body {
 }
 
 .oblako-wrapper {
-    width: 350px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 31px;
@@ -59,6 +58,7 @@ body {
     background-image: url('../img//obloko.png');
     background-size: contain;
     background-repeat: no-repeat;
+    margin-right: 30px;
 }
 
 .stars-logo {
@@ -75,7 +75,7 @@ body {
     color: #11211E;
     background: #BFFFF3;
     border: 1px solid #11211E;
-    padding: 10px 20px;
+    padding: 10px 10px;
     opacity: 0.6;
 }
 
@@ -84,19 +84,22 @@ body {
 }
 
 .first {
+    width: 45%;
     border-radius: 10px 0 0 10px;
 }
 
 .second {
+    width: 55%;
     border-radius: 0 10px 10px 0;
 }
 
 .btn-wrapper {
+    width: 100%;
     margin-bottom: 61px;
 }
 
 .description {
-    width: 390px;
+    width: 100%;
 }
 
 .description-text {
@@ -157,7 +160,7 @@ body {
 }
 
 .reservation-wrapper-right-img {
-    width: 486px;
+    width: 100%;
     height: 634px;
     background: #FFFFFF;
     border-radius: 180px 180px 0 0;
@@ -165,12 +168,13 @@ body {
 
 .right-img-container {
     width: 80%;
-    margin: auto;
+    margin:auto;
     margin-top: 55px;
 }
 
+
 .right-img-container p {
-    width: 60%;
+    width: 80%;
     margin: auto;
     color: #11211E;
     font-weight: 600;
@@ -188,14 +192,15 @@ body {
 }
 
 .select-wrapper-date-time {
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-bottom: 42px;
 }
 
 .select-wrapper-count-table {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 .select-date {
