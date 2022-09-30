@@ -33,23 +33,24 @@ const ReservationPage = () => {
     const [count, setCount] = useState([1]);
     const [table, setTable] = useState(['A1']);
 
-    const handleChangeNameInstitution = (event:any) => {
+
+    const handleChangeNameInstitution = (event: any) => {
         setInstitution(event.target.value);
     };
 
-    const handleChangeDate = (event:any) => {
+    const handleChangeDate = (event: any) => {
         setDate(event.target.value);
     };
 
-    const handleChangeTime = (event:any) => {
+    const handleChangeTime = (event: any) => {
         setTime(event.target.value);
     };
 
-    const handleChangeCount = (event:any) => {
+    const handleChangeCount = (event: any) => {
         setCount(event.target.value);
     };
 
-    const handleChangeTable = (event:any) => {
+    const handleChangeTable = (event: any) => {
         setTable(event.target.value);
     };
 
@@ -179,7 +180,8 @@ const ReservationPage = () => {
                                         <Rating
                                             name="simple-controlled"
                                             value={value}
-                                            onChange={(event:any, newValue:any) => {
+
+                                            onChange={(event, newValue: any) => {
                                                 setValue(newValue);
                                             }}
                                         />
