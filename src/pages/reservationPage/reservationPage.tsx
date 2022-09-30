@@ -23,7 +23,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 
 
 const ReservationPage = () => {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
     const [value, setValue] = useState(2); // Рейтинг заведения
 
@@ -33,23 +33,23 @@ const ReservationPage = () => {
     const [count, setCount] = useState([1]);
     const [table, setTable] = useState(['A1']);
 
-    const handleChangeNameInstitution = (event) => {
+    const handleChangeNameInstitution = (event:any) => {
         setInstitution(event.target.value);
     };
 
-    const handleChangeDate = (event) => {
+    const handleChangeDate = (event:any) => {
         setDate(event.target.value);
     };
 
-    const handleChangeTime = (event) => {
+    const handleChangeTime = (event:any) => {
         setTime(event.target.value);
     };
 
-    const handleChangeCount = (event) => {
+    const handleChangeCount = (event:any) => {
         setCount(event.target.value);
     };
 
-    const handleChangeTable = (event) => {
+    const handleChangeTable = (event:any) => {
         setTable(event.target.value);
     };
 
@@ -179,7 +179,7 @@ const ReservationPage = () => {
                                         <Rating
                                             name="simple-controlled"
                                             value={value}
-                                            onChange={(event, newValue) => {
+                                            onChange={(event:any, newValue:any) => {
                                                 setValue(newValue);
                                             }}
                                         />
@@ -239,8 +239,8 @@ const ReservationPage = () => {
                                 navigation={true}
                                 spaceBetween={10}
                                 thumbs={{ swiper: thumbsSwiper }}
-                                modules={[FreeMode, Navigation, Thumbs]}
-                                className="mySwiper"
+                                modules={[FreeMode]}
+                                className="ourSwiper"
                             >
                                 <SwiperSlide>
                                     <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
@@ -257,13 +257,13 @@ const ReservationPage = () => {
                             </Swiper>
                             <div className='img-inner-wrapper'>
                                 <Swiper
-                                    onSwiper={setThumbsSwiper}
+                                    // onSwiper={setThumbsSwiper}
                                     spaceBetween={10}
                                     slidesPerView={3}
                                     freeMode={true}
                                     watchSlidesProgress={true}
                                     modules={[FreeMode, Navigation, Thumbs]}
-                                    className="mySwiper"
+                                    className="mySwiper1"
                                 >
                                     <SwiperSlide>
                                         <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
