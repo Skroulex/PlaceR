@@ -18,7 +18,7 @@ const AboutPage = () => {
                 </div>
             </div>
             <div>
-                <img src={table} alt="table"/>
+                <img className={styles.photo} src={table} alt="table"/>
             </div>
         </div>
     );

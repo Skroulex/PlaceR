@@ -23,7 +23,7 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 
 
 const ReservationPage = () => {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
     const [value, setValue] = useState(2); // Рейтинг заведения
 
@@ -32,6 +32,7 @@ const ReservationPage = () => {
     const [time, setTime] = useState('07:30');
     const [count, setCount] = useState([1]);
     const [table, setTable] = useState(['A1']);
+
 
     const handleChangeNameInstitution = (event: any) => {
         setInstitution(event.target.value);
@@ -179,6 +180,7 @@ const ReservationPage = () => {
                                         <Rating
                                             name="simple-controlled"
                                             value={value}
+
                                             onChange={(event, newValue: any) => {
                                                 setValue(newValue);
                                             }}
@@ -239,8 +241,8 @@ const ReservationPage = () => {
                                 navigation={true}
                                 spaceBetween={10}
                                 thumbs={{ swiper: thumbsSwiper }}
-                                modules={[FreeMode, Navigation, Thumbs]}
-                                className="mySwiper"
+                                modules={[FreeMode]}
+                                className="ourSwiper"
                             >
                                 <SwiperSlide>
                                     <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
@@ -263,7 +265,7 @@ const ReservationPage = () => {
                                     freeMode={true}
                                     watchSlidesProgress={true}
                                     modules={[FreeMode, Navigation, Thumbs]}
-                                    className="mySwiper"
+                                    className="mySwiper1"
                                 >
                                     <SwiperSlide>
                                         <img className='img-1' src={listOfObject[0].ListOfImg[0].img} />
