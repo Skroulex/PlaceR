@@ -4,6 +4,8 @@ import MainPage from "./mainPage/mainPage";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AdminPage from "./adminPage/adminPage";
 import MainRegister from "./registrationPage/MainRegister";
+import CardsPage from "./cardPage/CardsPage";
+import Join from './registrationPage/joinIN/join'
 
 
 const MainRoutes = () => {
@@ -31,13 +33,13 @@ const MainRoutes = () => {
             id:1,
         },
         {
-            link:"/",
-            element: <MainPage />,
+            link:"/join",
+            element: <Join />,
             id:1,
         },
         {
-            link:"/",
-            element: <MainPage />,
+            link:"/cards",
+            element: <CardsPage />,
             id:1,
         },
         {

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 *{
+    overflow-x: hidder;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,7 +16,9 @@
  .wrapper{
        background: url("./assets/Rectangle 562.png") no-repeat;
        background-size: cover;
-        padding: 74px 180px;
+        /*padding: 74px 180px;*/
+     padding-top: 10%;
+     /*padding-left: 10%;*/
        height: 100vh;
        color: white;
        width: 100vw;
@@ -45,7 +48,8 @@
  }
 .inputs1{
     margin: 0 auto;
-    width: 550px;
+    /*text-align: center;*/
+    /*width: 550px;*/
     display: flex;
     justify-content: space-evenly;
     column-gap: 90px !important;
@@ -60,7 +64,7 @@
 }
 .vxod{
     margin: 0 auto;
-    width: 380px;
+    /*width: 380px;*/
     display: flex;
     justify-content: space-evenly;
 }
@@ -69,4 +73,23 @@
 }
 .regist h1{
     margin-bottom: 25px;
+}
+.navik{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*MEDIA REQUESTS*/
+@media( max-width: 600px) {
+    .inputs1{
+        display: block;
+        /*margin-left: -20%;*/
+        /*gap: 20%;*/
+    }
+    .regist{
+        /*margin-right: 100px;*/
+        /*margin-left:-20% ;*/
+        /*display: none;*/
+    }
 }

@@ -1,0 +1,78 @@
+Card{
+  //margin-top: 200px !important;
+  //margin-bottom: -200px !important;
+  margin-right: 200px !important;
+}
+
+.App-payment{
+  margin-left: -200px !important;
+}
+.special{
+  //transform: rotate(90deg);
+  transform: scale(1.3);
+  margin-top: 15%;
+  margin-left: -600px !important;
+}
+.againSpecial{
+  //margin-top: ;
+  //position: relative;
+  margin-top: -150px;
+  transform: rotate(320deg);
+}
+
+.allInputs{
+  margin-top: -10px;
+  //margin-left: 700px;
+}
+//.form1{
+//  //width: 300px !important;
+//  border-bottom-color: white !important;
+//  color: white !important;
+//  background-color: white !important;
+//}
+
+ //
+ //.css-1ptx2yq-MuiInputBase-root-MuiInput-root:before {
+ //  //border-bottom-color: white !important;
+ //  border-bottom: white !important;
+ //}
+
+.btn_block{
+
+  background-color: #BFFFF3 !important;
+  width: 168.2px;
+  height: 41.04px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  border-right: 16px !important;
+  margin-top: 3%;
+}
+
+.data3 {
+  .ache {
+    margin-top: 300px !important;
+    line-height: 10%;
+    margin-left: 90%;
+    margin-bottom: -100px;
+    color: white !important;
+  }
+
+}
+
+
+.data Input{
+  margin-top: 200px;
+}
+//MEDIA REQUESTS
+@media screen and (max-width: 750px){
+  .againSpecial{
+    //margin-left: 20%;
+    //margin-right: -300px;
+    margin-right: -60%;
+  }
+  .form-group{
+    margin-top: 100px;
+  }
+}
+
+
