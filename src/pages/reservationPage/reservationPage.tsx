@@ -259,7 +259,7 @@ const ReservationPage = () => {
                             </Swiper>
                             <div className='img-inner-wrapper'>
                                 <Swiper
-                                    // onSwiper={setThumbsSwiper}
+                                    onSwiper={setThumbsSwiper}
                                     spaceBetween={10}
                                     slidesPerView={3}
                                     freeMode={true}
