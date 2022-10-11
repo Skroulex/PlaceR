@@ -16,7 +16,7 @@ const Header = () => {
         },
         {
             name: "Бронь",
-            route: "/video",
+            route: "/reservation",
         },
         {
             name: "Меню",
