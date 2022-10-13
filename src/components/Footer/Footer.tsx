@@ -1,19 +1,19 @@
 import React from 'react';
-import  './style.sass';
+import s from  './Footer.module.scss';
 import FooterLogo from '../../assets/footer/footer-logo.svg';
 
 const Footer = () => {        
     return (
-        <footer className='footer'>
-            <div className='footer-content'>
-                <div className="footer-left-column">
-                    <div className="left-column-logo">
+        <footer className={s.footer}>
+            <div className={s.footer__content}>
+                <div className={s.footer_left_column}>
+                    <div className={s.left_column_logo}>
                         <img src={FooterLogo} alt="" />
                     </div>
-                    <div className="footer-map">
+                    <div className={s.footer__map}>
                         <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" scrolling="no" title='footer-map'></iframe>
                     </div>
-                    <ul className="footer-websites">
+                    <ul className={s.footer__websites}>
                         <li>
                             <a href="http://">
                                 <svg width="18" height="18" viewBox="0 0 17 17" fill="black" xmlns="http://www.w3.org/2000/svg">
@@ -36,7 +36,7 @@ const Footer = () => {
                             </a>
                         </li>
                     </ul>
-                    <div className="footer-address">
+                    <div className={s.footer__address}>
                         <h5>Мы находимся</h5>
                         <ul>
                             <li><a href="http://">г. Санкт-Петербург, ул. Бутырский Вал</a></li>
@@ -44,22 +44,22 @@ const Footer = () => {
                         </ul> 
                     </div>
                 </div>
-                <div className="footer-right-column">
+                <div className={s.footer_right_column}>
                     <div className="right-column-logo">
                         <img src={FooterLogo} alt="" />
                     </div>
-                    <div className="footer-menu">
+                    <div>
                         <h5>О нас</h5>
                         <p>В своём стремлении улучшить.</p>
                     </div>
-                    <div className="footer-menu">
+                    <div>
                         <h5>Напишите нам</h5>
                         <ul>
                             <li><a href="tel:+1+86852346000">+1+86 852 346 000</a></li>
                             <li><a href="mailto:info@restaurant.com">info@restaurant.com</a></li>
                         </ul>
                     </div>
-                    <div className="footer-menu">
+                    <div>
                         <h5>Информация</h5>
                         <ul>
                             <li><span>Часы работы</span></li>

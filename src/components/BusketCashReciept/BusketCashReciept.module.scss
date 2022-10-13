@@ -1,0 +1,102 @@
+.busket__cash{
+  position: fixed;
+  bottom: 0;
+  right: 45px;
+  max-width: 406px;
+  width: 100%;
+  height: 600px;
+  border-radius: 49% 49% 0% 0% / 18% 18% 0% 0% ;
+  background-color: #11231fa4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 49px 39px 130px 39px;
+  h1{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+    color: #BFFFF3;
+  }
+  ol{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-left: 0.9em;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    div{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    *{
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+    }
+    li{
+      list-style-type: decimal;
+      list-style-position: outside; 
+      margin-left: 1em;
+    }
+  }
+  hr{
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    margin: 20px 0;
+  }
+}
+
+.busket__cash_list{
+  width: 100%;
+}
+
+.busket__cash_totalPrice{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.busket__cash_bottomButton{
+  margin-top: 23px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  button{
+    cursor: pointer;
+    background: #FFAA5B;
+    border: 0;
+    padding: 9px 17px;
+    border-radius: 10px;
+    color: #000;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .busket__cash{
+    margin-top: 68px;
+    position: static;
+    max-width: 100%;
+    height: 680px;
+    padding: 60px 15px 125px 15px;
+    .busket__cash_list{
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+}

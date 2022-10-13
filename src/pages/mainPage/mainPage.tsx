@@ -7,6 +7,7 @@ import s from "./mainPage.module.scss"
 import WelcomePage from "./components/welcomePage/welcomePage";
 import ReservationPage from "../reservationPage/reservationPage";
 import AboutPage from "./components/aboutPage/aboutPage";
+import MenuPage from '../menuPage/menuPage';
 import Footer from "../../components/Footer/Footer";
 
 const MainPage = () => {
@@ -19,11 +20,11 @@ const MainPage = () => {
             >
                 <SwiperSlide><WelcomePage /></SwiperSlide>
 
-                <SwiperSlide><AboutPage /></SwiperSlide>
+                {/* <SwiperSlide><AboutPage /></SwiperSlide>
+                
+                <SwiperSlide><ReservationPage /></SwiperSlide> */}
 
-                <SwiperSlide><ReservationPage /></SwiperSlide>
-
-                <SwiperSlide><WelcomePage /></SwiperSlide>
+                <SwiperSlide><MenuPage /></SwiperSlide>
 
                 <SwiperSlide><Footer/></SwiperSlide>
             </Swiper>

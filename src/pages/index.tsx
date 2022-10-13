@@ -5,6 +5,7 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AdminPage from "./adminPage/adminPage";
 import ReservationPage from "./reservationPage/reservationPage";
 import Footer from "../components/Footer/Footer";
+import BusketPage from "./busketPage/busketPage";
 
 
 const MainRoutes = () => {
@@ -19,6 +20,11 @@ const MainRoutes = () => {
         {
             link:"/",
             element: <MainPage />,
+            id:1,
+        },
+        {
+            link:"/busket",
+            element: <BusketPage/>,
             id:1,
         },
         // {
