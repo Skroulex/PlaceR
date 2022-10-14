@@ -1,0 +1,218 @@
+@media screen and (max-width: 1024px) {
+    .reservation-left-title {
+        font-size: 16px;
+    }
+    .reservation-left-title-second {
+        font-size: 26px;
+    }
+    .first, .second {
+        font-size: 14px;
+    }
+    .description-text {
+        font-size: 14px;
+    }
+    .description-wrapper p {
+        font-size: 16px;
+    }
+    .right-img-container p {
+        font-size: 26px;
+    }
+    .btn-reservation {
+        font-size: 16px;
+    }
+    .oblako-wrapper {
+        margin-bottom: 20px;
+    }
+    .btn-wrapper {
+        margin-bottom: 20px;
+    }
+    .description-text {
+        margin-bottom: 20px;
+    }
+    .description-wrapper {
+        height: 110px;
+    }
+    .select-date, .select-time, .select-count, .select-table {
+        width: 100%;
+    }
+    .select-wrapper-date-time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .select-wrapper-count-table {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .select-wrapper-btn-reservation {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .reservation {
+        height: 100%;
+    }
+    .reservation-wrapper {
+        display: block;
+    }
+    .reservation-wrapper-left {
+        width: 100%;
+    }
+    .reservation-wrapper-middle {
+        width: 100%;
+    }
+    .reservation-wrapper-right {
+        width: 100%;
+    }
+    .reservation-left-title {
+        font-size: 18px;
+    }
+    .reservation-left-title-second {
+        font-size: 28px;
+    }
+    .oblako-wrapper {
+        margin-bottom: 31px;
+    }
+    .btn-wrapper {
+        margin-bottom: 61px;
+    }
+    .description-text {
+        margin-bottom: 48px;
+    }
+    .first, .second {
+        font-size: 16px;
+    }
+    .description-wrapper {
+        height: 130px;
+    }
+    .reservation-wrapper-middle {
+        margin-bottom: 200px;
+    }
+    .reservation-wrapper-right-img {
+        position: relative;
+        left: -39px;
+    }
+    .reservation-wrapper-right {
+        width: calc(100% + 77px);
+    }
+    .select-wrapper-date-time {
+        flex-direction: row;
+        margin-bottom: 42px;
+    }
+    .select-wrapper-count-table {
+        flex-direction: row;
+    }
+    .select-constitution {
+        width: 70%;
+    }
+    .select-date {
+        width: 70%;
+    }
+    .select-time {
+        width: 30%;
+    }
+    .select-count {
+        width: 30%;
+    }
+    .select-table {
+        width: 70%;
+    }
+    .btn-reservation {
+        width: 70%;
+    }
+    .select-wrapper-btn-reservation {
+        margin-top: 54px;
+    }
+    .reservation-left-title {
+        font-size: 18px;
+    }
+    .oblako-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+        margin-bottom: 20px;
+    }
+    .block-right-oblako {
+        margin-bottom: 20px;
+    }
+    .reservation-left-title-second {
+        font-size: 28px;
+    }
+    .first, .second {
+        font-size: 16px;
+    }
+    .description-text {
+        font-size: 16px;
+    }
+    .description-wrapper p {
+        font-size: 18px;
+    }
+    .reservation-wrapper-right-img {
+        position: relative;
+        left: -38px;
+    }
+    .reservation-wrapper-right {
+        width: calc(100% + 77px);
+    }
+}
+
+
+@media screen and (max-width: 426px) { 
+    .reservation-left-title {
+        font-size: 16px;
+    }
+    .reservation-left-title-second {
+        font-size: 24px;
+    }
+    .first, .second {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 5px 8px;
+    }
+    .btn-wrapper {
+        margin-bottom: 20px;
+    }
+    .description-text {
+        margin-left: 20px;
+    }
+    .description-text {
+        margin-bottom: 20px;
+    }
+    .reservation-wrapper-right-img {
+        position: relative;
+        left: -21px;
+    }
+    .reservation-wrapper-right {
+        width: calc(100% + 42px);
+    }
+}
+
+@media screen and (max-width: 376px) {  
+    .right-img-container p {
+        font-size: 24px;
+    }
+    .reservation-wrapper-right-img {
+        position: relative;
+        left: -19px;
+    }
+    .reservation-wrapper-right {
+        width: calc(100% + 38px);
+    }
+}
+
+@media screen and (max-width: 320px) {  
+    .reservation-wrapper-right-img {
+        position: relative;
+        left: -16px;
+    }
+    .reservation-wrapper-right {
+        width: calc(100% + 32px);
+    }
+}
+
+
+

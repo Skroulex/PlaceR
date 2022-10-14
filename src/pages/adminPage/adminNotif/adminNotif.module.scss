@@ -1,0 +1,245 @@
+
+h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFB03B;
+}
+h3{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFB03B;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+
+  .right {
+    display: flex;
+    max-width: 945px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    &_content {
+      a {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        color: #FFFFFF;
+        opacity: 0.6;
+      }
+      .activeLink {
+        opacity: 1;
+        margin-bottom: 20px;
+        color: #FFB03B;
+      }
+      .right_bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+
+        input {
+          margin-top: 14px;
+          width: 400px;
+          background: inherit;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid #737373;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    & h2 {
+      margin-top: 36px;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 27px;
+      color: #FFFFFF;
+      & svg {
+        margin-left: 14px;
+      }
+    }
+  }
+
+  & h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 0 0 58px 75px;
+  }
+
+  & .addPhoto {
+    margin-top: 40px;
+    position: relative;
+
+    & .button {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.right_add {
+  & input {
+    margin-top: 10px;
+  }
+}
+
+.right_info {
+  button {
+    margin-top: 25px;
+  }
+
+  &_block {
+    height: 110px;
+  }
+
+  p {
+    margin-top: 5px;
+    color: red;
+  }
+
+
+}
+
+.views {
+  margin: 17px 0;
+}
+
+.inputWrapper {
+  width: 100%;
+}
+
+.input{
+  -webkit-appearance: none;
+  border-radius: 10px;
+  appearance: none;
+  width: 100%;
+  height: 3px;
+  background: #999;
+  outline: none;
+
+  &::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 17px;
+    height: 18px;
+    border-radius: 10px;
+    background: #FFB03B;
+  }
+}
+.numbers{
+  margin: 0 auto;
+  width: 269px;
+  display: flex;
+  justify-content: space-between;
+  span{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+}
+.valueSpan{
+  color: #FFB03B;
+}
+.input_area{
+  width: 400px;
+  height: 240px;
+  margin-bottom: 110px;
+  background-color: #192A26;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+  resize: none;
+  border-bottom: 2px solid #737373;
+}
+table{
+  border-collapse: collapse;
+  border-top: 2px solid #49605A;
+  border-left: 2px solid #49605A;
+
+  th{
+    color: #FFAA5B;
+    border-bottom: 2px solid #49605A;
+    border-right: 2px solid #49605A;
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  td{
+    color: white;
+    border-bottom: 2px solid #49605A;
+    border-right: 2px solid #49605A;
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.btn_accept{
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #000000;
+  background: #FFAA5B;
+  border-radius: 8px;
+  padding: 10px 15px;
+  border:none;
+}
+.btn_decline{
+  border:none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: #49605A;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+.print{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 37px;
+  .print_svg{
+    display: flex;
+    align-items: center;
+    p{
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 5px;
+      margin-right: 15px;
+    }
+  }
+  button{
+    margin-right: 20px;
+  }
+}

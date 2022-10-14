@@ -3,7 +3,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 52px;
+  margin-top: 100px;
   .text{
     width: 550px;
     text-align: center;
@@ -47,11 +47,17 @@
 }
 button{
   font-family: "Montserrat";
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px){
+  .wrapper{
+    padding-bottom: 120px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .wrapper{
-    padding-bottom: 150px;
 
     .image{
       img{
