@@ -1,0 +1,43 @@
+.menu__navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  h1{
+    font-size: 28px;
+    line-height: 39px;
+    font-weight: 600;
+  };
+  ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    button{
+      background: none;
+      border: 0;
+      font-size: 18px;
+      line-height: 25px;
+      opacity: 60%;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .currentCategory{
+      opacity: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 786px){
+  .menu__navbar{
+    h1{
+      color: #FFAA5B;
+    }
+    ul{
+      .currentCategory{
+        color: #FFAA5B;
+      }
+    }
+  }
+}
