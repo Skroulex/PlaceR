@@ -4,6 +4,8 @@ import MainPage from "./mainPage/mainPage";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import ReservationPage from "./reservationPage/reservationPage";
 import Footer from "../components/Footer/Footer";
+import BusketPage from "./busketPage/busketPage";
+import BusketPage from "./busketPage/busketPage";=======
 import AdminMenu from "./adminPage/UI/adminMenu/adminMenu";
 import AdminEditor from "./adminPage/adminEditor/adminEditor";
 import AdminAbout from "./adminPage/adminEditor/adminAbout/adminAbout";
@@ -35,6 +37,10 @@ const MainRoutes = () => {
             id:3,
         },
         {
+            link:"/busket",
+            element: <BusketPage/>,
+            id:1,
+        },
             link:"/reservation",
             element: <ReservationPage />,
             id:4,
