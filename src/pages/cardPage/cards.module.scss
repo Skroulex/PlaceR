@@ -1,0 +1,123 @@
+.wrapper2{
+  //display: none;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: url("./assets/flowers.png") no-repeat ;
+  background-color: #12231F;
+
+}
+
+.card{
+  height: 950px;
+  box-sizing: border-box;
+  margin: 0;
+  //padding: 0;
+  //background-size: cover;
+  padding: 120px 233px;
+
+}
+.data{
+  margin-top: -10%;
+  //line-height: 40px;
+  margin-left: 64%;
+  color: #FFFFFF;
+  width: 520px;
+  text-align: center;
+  //display: grid;
+  //grid-template-columns: 1fr 1fr;
+  & h1{
+    //line-height: 190px;
+    margin-bottom: 6%;
+  }
+}
+.data2{
+  transform: scale(0.95   );
+  margin-left: 30%;
+  position: absolute;
+  //margin-top: -200px !important;
+  //line-height: 40px;
+  //margin-left: 64%;
+  color: #FFFFFF;
+  width: 520px;
+  text-align: center;
+  //display: grid;
+  //grid-template-columns: 1fr 1fr;
+  & h1{
+    //line-height: 190px;
+    //margin-bottom: 26%;
+    margin-top: -200px;
+  }
+}
+.payment{
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.inputReg{
+  width: 22vw;
+  //color: white !important;
+  //border-bottom-color: #FFFFFF !important;
+}
+//media 600
+@media screen and (max-width: 600px){
+  .inputReg{
+    text-align: center;
+    width: 60vw;
+    margin: 10px;
+  }
+  .inputReg::placeholder{
+    text-align: center !important;
+  }
+
+  //.card{
+  //  //padding: 10% 10%;
+  //  padding-top: 20%;
+  //  padding-left: 200px;
+  //}
+
+}
+
+
+@media screen and (max-width: 1140px){
+  .card{
+    transform: scale(0.8) ;
+
+  }
+}
+@media screen and (max-width: 870px){
+  .data{
+    margin-top: 40%;
+  }
+}
+
+
+
+
+
+//
+//
+//
+
+
+@media screen and (max-width: 750px){
+  .data{
+  transform: scale(1.3);
+    margin-top: 350px !important;
+    margin-left: -330px;
+  }
+  .data2{
+    //line-height: 40px;
+    width: 381px  ;
+    margin-left: -270px;
+    margin-bottom: 10%;
+  }
+  .data2 p{
+    margin-top:2%;
+    opacity: 50%;
+  }
+  .payment{
+    margin-bottom: 100px;
+  }
+
+}
