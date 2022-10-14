@@ -1,15 +1,15 @@
 import {combineReducers, configureStore} from "@reduxjs/toolkit";
-import {ModalSlice} from "./reducers/ModalSlice";
+import {FooterQueryApi} from "./services/adminFooterApi";
 
 const rootReducer = combineReducers({
-    // ModalSlice: ModalSlice,
+    [FooterQueryApi.reducerPath]: FooterQueryApi.reducer,
 })
 
 export const store = configureStore({
     reducer:rootReducer,
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware().concat(
-
+            FooterQueryApi.middleware,
         ),
 });
 

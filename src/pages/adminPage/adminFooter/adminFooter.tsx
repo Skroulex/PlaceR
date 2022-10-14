@@ -15,13 +15,12 @@ import facebook from "../../../assets/admin/facebook.svg"
 import twitter from "../../../assets/admin/twitter.svg"
 import link from "../../../assets/admin/link.svg"
 import {Link, useLocation} from "react-router-dom";
+import {useAddFooterMutation} from "../../../store/services/adminFooterApi";
 
 
 
 const AdminFooter = () => {
-    // const [addPhotos, {data = [], error}] = useAddPhotosMutation();
-
-    const [value, setValue] = useState("1")
+    const [postFooter] = useAddFooterMutation();
 
     type schemaType = InferType<typeof schema>;
 
@@ -30,7 +29,6 @@ const AdminFooter = () => {
         handleSubmit,
         formState: {
             errors,
-            isValid
         },
         reset
     } = useForm<schemaType>({
@@ -39,19 +37,20 @@ const AdminFooter = () => {
     })
 
     const onSubmit = (data: { [key: string]: any; }) => {
-        const formData = new FormData();
-        console.log(data)
+        const footerPage = new FormData();
         Object.keys(data).forEach((key) => {
             const value = data[key];
-            if (value[0] && typeof value !== "string" && typeof value[0] !== "string") {
+            if (value[0] && typeof value !== "string") {
                 Array.from(value as File[]).forEach((val) => {
-                    formData.append(key, val);
+                    footerPage.append(key, val);
                 });
             } else {
-                formData.append(key, value);
+                footerPage.append(key, value);
             }
         });
-        // addPhotos(formData)
+        console.log(postFooter)
+        postFooter(footerPage);
+        reset();
     }
 
 
@@ -67,19 +66,19 @@ const AdminFooter = () => {
                                 <img src={AddPhoto} alt="addPhoto"/>
                                 <Button className={classes.button} variant="contained" component="label">
                                     Upload
-                                    <input {...register("photos")} hidden accept="image/*" multiple type="file"/>
-                                    {/*<p>{errors?.photos?.message}</p>*/}
+                                    <input hidden accept="image/*" multiple type="file"/>
                                 </Button>
                             </div>
                             <h3>Информация</h3>
                             <h2>О нас</h2>
                             <div className={classes.right_info_block}>
-                                <input/>
+                                <input type="text" {...register("desc")}/>
+                                <p>{errors?.desc?.message}</p>
                             </div>
                             <div className={classes.right_info_block}>
                                 <h2>Часы работы</h2>
-                                <input type="text" {...register("time")}/>
-                                <p>{errors?.time?.message}</p>
+                                <input type="text" {...register("workTime")}/>
+                                <p>{errors?.workTime?.message}</p>
                             </div>
                             <div className={classes.right_info_block}>
                                 <div className={classes.right_svg}><h2>Дополнительные ссылки</h2>
