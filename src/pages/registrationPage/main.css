@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+*{
+    overflow-x: hidder;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+    font-family: 'Montserrat';
+    height: 100vh;
+    /* padding: -; */
+   /* background: url("./assets/Rectangle 562.png") no-repeat; */
+
+ }
+ .wrapper{
+       background: url("./assets/Rectangle 562.png") no-repeat;
+       background-size: cover;
+        /*padding: 74px 180px;*/
+     padding-top: 10%;
+     /*padding-left: 10%;*/
+       height: 100vh;
+       color: white;
+       width: 100vw;
+  
+ }
+
+ .regist {
+     /*margin: 0 auto ;*/
+    /*max-width: 630px;*/
+     text-align: center;
+
+ }
+ /*.btns{*/
+ /*    gap: normal;*/
+ /*}*/
+
+ .btns img {
+     margin-left: 20px;
+ }
+ .input{
+     width: 280px;
+     flex-direction: column;
+ }
+ .inputik{
+     margin-bottom: -30px;
+     text-decoration: none;
+ }
+.inputs1{
+    margin: 0 auto;
+    /*text-align: center;*/
+    /*width: 550px;*/
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 90px !important;
+    row-gap: 90px !important;
+    margin-bottom: 2%;
+}
+.field{
+    margin-right: 90px;
+}
+.button{
+    margin-top: 70px;
+}
+.vxod{
+    margin: 0 auto;
+    /*width: 380px;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+.vxod  {
+    margin-top: 28px;
+}
+.regist h1{
+    margin-bottom: 25px;
+}
+.navik{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*MEDIA REQUESTS*/
+@media( max-width: 600px) {
+    .inputs1{
+        display: block;
+        /*margin-left: -20%;*/
+        /*gap: 20%;*/
+    }
+    .regist{
+        /*margin-right: 100px;*/
+        /*margin-left:-20% ;*/
+        /*display: none;*/
+    }
+}

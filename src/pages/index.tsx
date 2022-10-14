@@ -2,10 +2,12 @@ import React, {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
 import MainPage from "./mainPage/mainPage";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import MainRegister from "./registrationPage/MainRegister";
+import CardsPage from "./cardPage/CardsPage";
+import Join from './registrationPage/joinIN/join'
 import ReservationPage from "./reservationPage/reservationPage";
 import Footer from "../components/Footer/Footer";
 import BusketPage from "./busketPage/busketPage";
-import BusketPage from "./busketPage/busketPage";=======
 import AdminMenu from "./adminPage/UI/adminMenu/adminMenu";
 import AdminEditor from "./adminPage/adminEditor/adminEditor";
 import AdminAbout from "./adminPage/adminEditor/adminAbout/adminAbout";
@@ -14,6 +16,7 @@ import AdminNotif from "./adminPage/adminNotif/adminNotif";
 import AdminFooter from "./adminPage/adminFooter/adminFooter";
 import AboutPage from "./mainPage/components/aboutPage/aboutPage";
 import AdminEdit from "./adminPage/adminEdit/adminEdit";
+import MenuPage from "./menuPage/menuPage";
 
 
 const MainRoutes = () => {
@@ -39,28 +42,34 @@ const MainRoutes = () => {
         {
             link:"/busket",
             element: <BusketPage/>,
-            id:1,
+            id:4,
         },
+
+        {
+            link:"/join",
+            element: <Join />,
+            id:5,
+        },
+        {
+            link:"/cards",
+            element: <CardsPage />,
+            id:6,
+        },
+        {
+            link: "/registration",
+            element: <MainRegister/>,
+            id: 7,
+        },
+        {
             link:"/reservation",
             element: <ReservationPage />,
-            id:4,
-        }
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-        // {
-        //     link:"/",
-        //     element: <MainPage />,
-        //     id:1,
-        // },
-
+            id:8,
+        },
+        {
+            link:"/menu",
+            element: <MenuPage/>,
+            id:9    ,
+        },
     ]
 
     const PRIVATE_ROUTES = [
