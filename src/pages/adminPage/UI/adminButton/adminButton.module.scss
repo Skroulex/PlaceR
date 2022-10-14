@@ -1,0 +1,19 @@
+.button {
+  display: flex;
+  justify-content: right;
+
+  button {
+    border: none;
+    cursor: pointer;
+    width: 205px;
+    height: 58px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    background: #FFB03B;
+    border-radius: 10px;
+  }
+}
+

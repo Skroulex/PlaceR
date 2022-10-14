@@ -2,10 +2,21 @@ import React, {useEffect, useState} from "react";
 import {Route, Routes} from "react-router-dom";
 import MainPage from "./mainPage/mainPage";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
-import AdminPage from "./adminPage/adminPage";
 import MainRegister from "./registrationPage/MainRegister";
 import CardsPage from "./cardPage/CardsPage";
 import Join from './registrationPage/joinIN/join'
+import ReservationPage from "./reservationPage/reservationPage";
+import Footer from "../components/Footer/Footer";
+import BusketPage from "./busketPage/busketPage";
+import AdminMenu from "./adminPage/UI/adminMenu/adminMenu";
+import AdminEditor from "./adminPage/adminEditor/adminEditor";
+import AdminAbout from "./adminPage/adminEditor/adminAbout/adminAbout";
+import AdminAd from "./adminPage/adminAd/adminAd";
+import AdminNotif from "./adminPage/adminNotif/adminNotif";
+import AdminFooter from "./adminPage/adminFooter/adminFooter";
+import AboutPage from "./mainPage/components/aboutPage/aboutPage";
+import AdminEdit from "./adminPage/adminEdit/adminEdit";
+import MenuPage from "./menuPage/menuPage";
 
 
 const MainRoutes = () => {
@@ -18,42 +29,84 @@ const MainRoutes = () => {
             id:1,
         },
         {
-            link:"/",
-            element: <MainPage />,
-            id:1,
+            link:"/footer",
+            element: <Footer />,
+            id:2,
+        },
+
+        {
+            link:"/about",
+            element: <AboutPage />,
+            id:3,
         },
         {
-            link:"/",
-            element: <MainPage />,
-            id:1,
+            link:"/busket",
+            element: <BusketPage/>,
+            id:4,
         },
-        {
-            link:"/",
-            element: <MainPage />,
-            id:1,
-        },
+
         {
             link:"/join",
             element: <Join />,
-            id:1,
+            id:5,
         },
         {
             link:"/cards",
             element: <CardsPage />,
-            id:1,
+            id:6,
         },
         {
-            link:"/registration",
-            element: <MainRegister />,
-            id:1,
-        }
+            link: "/registration",
+            element: <MainRegister/>,
+            id: 7,
+        },
+        {
+            link:"/reservation",
+            element: <ReservationPage />,
+            id:8,
+        },
+        {
+            link:"/menu",
+            element: <MenuPage/>,
+            id:9    ,
+        },
     ]
 
     const PRIVATE_ROUTES = [
         {
             link:"admin",
-            element: <AdminPage/>,
+            element: <AdminMenu/>,
             id:1,
+        },
+        {
+            link:"admin/editor",
+            element: <AdminEditor/>,
+            id:2,
+        },
+        {
+            link:"admin/editor/about",
+            element: <AdminAbout/>,
+            id:3,
+        },
+        {
+            link:"admin/advertising",
+            element: <AdminAd/>,
+            id:4,
+        },
+        {
+            link:"admin/notification",
+            element: <AdminNotif/>,
+            id:5,
+        },
+        {
+            link:"admin/footer",
+            element: <AdminFooter/>,
+            id:6,
+        },
+        {
+            link:"admin/edit",
+            element: <AdminEdit/>,
+            id:7,
         },
     ]
 

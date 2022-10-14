@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AdminPage = () => {
+const AdminInput = () => {
     return (
         <div>
-
+            
         </div>
     );
 };
 
-export default AdminPage;
+export default AdminInput;

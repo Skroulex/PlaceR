@@ -1,0 +1,87 @@
+.wrapper{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 100px;
+  .text{
+    width: 550px;
+    text-align: center;
+  }
+  .title{
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 142%;
+  }
+  .subtitle{
+    margin-top: 46px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142%;
+  }
+  .sign_up{
+    background: #C6FFFF;
+    color: black;
+    border-radius: 10px;
+    padding: 14px 32px;
+    font-size: 20px;
+    line-height: 142%;
+    font-weight: 600;
+    margin-right: 28px;
+    border: none;
+  }
+  .sign_in{
+    color: black;
+    background: #FFAA5B;
+    border-radius: 10px;
+    padding: 14px 32px;
+    font-size: 20px;
+    line-height: 142%;
+    font-weight: 600;
+    border: none;
+  }
+  .menu{
+    margin-top: 100px;
+  }
+
+}
+button{
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px){
+  .wrapper{
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .wrapper{
+
+    .image{
+      img{
+        width: 85%;
+        margin-left: 34px;
+      }
+    }
+    .title{
+      font-size: 35px;
+    }
+  }
+}
+@media screen and (max-width: 320px){
+  .wrapper{
+    .sign_in{
+      font-size: 14px;
+    }
+    .sign_up{
+      font-size: 14px;
+    }
+    .image{
+      img{
+        margin-left: 25px;
+      }
+    }
+  }
+}

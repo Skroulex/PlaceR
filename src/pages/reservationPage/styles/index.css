@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #FFFFFF;
+}
+
+.reservation {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/Rectangle\ 559.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.reservation-wrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-wrapper-left {
+    width: 30%;
+    margin-top: 50px;
+}
+
+.reservation-left-title {
+    font-size: 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 142%;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+
+.reservation-left-title-second {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 142%;
+    margin-bottom: 21px;
+}
+
+.oblako-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    margin-left: 20px;
+}
+
+.block-right-oblako {
+    width: 120px;
+    height: 82px;
+    background-image: url('../img//obloko.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 30px;
+}
+
+.stars-logo {
+    width: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 152%;
+    color: #11211E;
+    background: #BFFFF3;
+    border: 1px solid #11211E;
+    padding: 10px 10px;
+    opacity: 0.6;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.first {
+    width: 45%;
+    border-radius: 10px 0 0 10px;
+}
+
+.second {
+    width: 55%;
+    border-radius: 0 10px 10px 0;
+}
+
+.btn-wrapper {
+    width: 100%;
+    margin-bottom: 61px;
+}
+
+.description {
+    width: 100%;
+}
+
+.description-text {
+    margin-bottom: 48px;
+}
+
+.description-wrapper {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description-wrapper p {
+    font-size: 18px;
+}
+
+.description-inner-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.item-img {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-descr {
+    margin-left: 15px;
+}
+
+.img-wrapper {
+    width: 100%;
+}
+
+.img-inner-wrapper {
+    margin-top: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation-wrapper-middle {
+    width: 30%;
+    margin-top: 249px;
+}
+
+.img-1, .img-2, .img-3, .img-4 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.reservation-wrapper-right {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.reservation-wrapper-right-img {
+    width: 100%;
+    height: 634px;
+    background: #FFFFFF;
+    border-radius: 180px 180px 0 0;
+}
+
+.right-img-container {
+    width: 80%;
+    margin:auto;
+    margin-top: 55px;
+}
+
+
+.right-img-container p {
+    width: 80%;
+    margin: auto;
+    color: #11211E;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 142%;
+    text-align: center;
+}
+
+.select-wrapper-institution {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+
+}
+
+.select-wrapper-date-time {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+
+.select-wrapper-count-table {
+    display: flex;
+    justify-content: center;
+}
+
+.select-date {
+    width: 70%;
+}
+
+.select-table {
+    width: 70%;
+}
+
+.btn-reservation {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 142%;
+    padding: 12px 18px;
+    background: #FFAA5B;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.select-wrapper-btn-reservation {
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#date, #time {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
