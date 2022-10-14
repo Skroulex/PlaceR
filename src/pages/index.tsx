@@ -56,6 +56,7 @@ const MainRoutes = () => {
             id:6,
         },
         {
+
             link: "/registration",
             element: <MainRegister/>,
             id: 7,
